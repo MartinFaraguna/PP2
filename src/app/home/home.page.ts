@@ -7,11 +7,16 @@ import { Component } from '@angular/core';
   standalone: false,
 })
 export class HomePage {
-
+  
+  
   constructor() {}
+  
+  // let prueba = el.getElementsByClassName('prueba');
 
   onClick() {
     console.log('Button clicked!');
   }
+
+
 
 }

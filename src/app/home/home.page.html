@@ -1,12 +1,117 @@
-<ion-header [translucent]="true">
+<!-- <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title class="ion-text-center"> Ticketera </ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
-<ion-content [fullscreen]="true">
-  <ion-input type="number" placeholder="Input!"></ion-input>
-  <ion-button expand="block" (click)="onClick()">Click me!</ion-button>
-</ion-content>
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar class="prueba">
+      <ion-title>Menu Content</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Menu</ion-title>
+      <!-- <ion-progress-bar type="indeterminate"></ion-progress-bar> -->
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-list>
+      <ion-item>
+        <ion-input
+          type="text"
+          label="Nombre"
+          labelPlacement="floating"
+          placeholder="Ingrese su nombre"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input
+          type="text"
+          label="Apellido"
+          labelPlacement="floating"
+          placeholder="Ingrese su apellido"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input
+          type="text"
+          label="Usuario"
+          labelPlacement="floating"
+          placeholder="Ingrese su Usuario"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input
+          type="text"
+          label="Teléfono"
+          labelPlacement="floating"
+          placeholder="Ingrese su teléfono"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-textarea
+          label="Descripcion del error"
+          labelPlacement="floating"
+          auto-grow="true"
+          rows="1"
+        ></ion-textarea>
+      </ion-item>
+    </ion-list>
+    <ion-button expand="block" (click)="onClick()"
+      >Enviar</ion-button
+    ></ion-content
+  >
+</div>
+
+<!-- <ion-content [fullscreen]="true" class="ion-padding">
+  <ion-list>
+    <ion-item>
+      <ion-input
+        type="text"
+        label="Nombre"
+        labelPlacement="floating"
+        placeholder="Ingrese su nombre"
+      ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input
+        type="text"
+        label="Apellido"
+        labelPlacement="floating"
+        placeholder="Ingrese su apellido"
+      ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input
+        type="text"
+        label="Usuario"
+        labelPlacement="floating"
+        placeholder="Ingrese su Usuario"
+      ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input
+        type="text"
+        label="Teléfono"
+        labelPlacement="floating"
+        placeholder="Ingrese su teléfono"
+      ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-textarea
+        label="Descripcion del error"
+        labelPlacement="floating"
+        auto-grow="true"
+        rows="1"
+      ></ion-textarea>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="block" (click)="onClick()">Enviar</ion-button>
+</ion-content> -->
