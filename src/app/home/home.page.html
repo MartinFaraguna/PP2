@@ -8,8 +8,21 @@
   <ion-header>
     <ion-toolbar class="prueba">
       <ion-title>Menu Content</ion-title>
+      <ion-menu-toggle>
+        <ion-button>Click to close the menu</ion-button>
+      </ion-menu-toggle>
     </ion-toolbar>
   </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item routerLink="/home">Home</ion-item>
+      <ion-item routerLink="/login">Login</ion-item>
+      <ion-item routerLink="/register">Register</ion-item>
+      <ion-item routerLink="/forgot-password">Forgot Password</ion-item>
+      <ion-item routerLink="/profile">Profile</ion-item>
+      <ion-item routerLink="/about">About</ion-item>
+    </ion-list>
+  </ion-content>
 </ion-menu>
 <div class="ion-page" id="main-content">
   <ion-header>
@@ -17,7 +30,7 @@
       <ion-buttons slot="start">
         <ion-menu-button></ion-menu-button>
       </ion-buttons>
-      <ion-title>Menu</ion-title>
+      <ion-title>Ticketera V1</ion-title>
       <!-- <ion-progress-bar type="indeterminate"></ion-progress-bar> -->
     </ion-toolbar>
   </ion-header>
