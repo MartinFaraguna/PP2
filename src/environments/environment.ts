@@ -3,8 +3,23 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: "AIzaSyALQVbmRlBE7MyS5q66agye6jAm7-IdhYw",
+    authDomain: "ticketera-pp2.firebaseapp.com",
+    projectId: "ticketera-pp2",
+    storageBucket: "ticketera-pp2.firebasestorage.app",
+    messagingSenderId: "315347955229",
+    appId: "1:315347955229:web:ad2a16e252c25898de60f4"
+  }
 };
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
 
 /*
  * For easier debugging in development mode, you can import the following file
