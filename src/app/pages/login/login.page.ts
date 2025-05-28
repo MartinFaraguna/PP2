@@ -18,8 +18,8 @@ export class LoginPage implements OnInit {
     try {
       await this.authService.login(this.email, this.password);
       this.router.navigate(['/']); // o alguna ruta protegida
-    } catch (error) {
-      alert('Error al iniciar sesión: ' + (error as any).message);
+    } catch (e) {
+      alert('Error al iniciar sesión: ' + (e as any).message);
     }
   }
   ngOnInit() {}

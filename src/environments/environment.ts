@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  firebaseConfig: {
+  firebase: {
     apiKey: 'AIzaSyALQVbmRlBE7MyS5q66agye6jAm7-IdhYw',
     authDomain: 'ticketera-pp2.firebaseapp.com',
     projectId: 'ticketera-pp2',
